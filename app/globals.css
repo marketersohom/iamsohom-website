@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #0a0a0a;
+  --color-gold: #c9a84c;
+  --color-cream: #ede8df;
+  --color-muted: #7a7469;
+  --color-surface: #111111;
+  --color-border: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-cream);
+  font-family: var(--font-jost), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Gold pulse dot */
+@keyframes gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.7);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(201, 168, 76, 0);
+    opacity: 0.8;
+  }
+}
+
+.pulse-gold {
+  animation: gold-pulse 2.5s ease-in-out infinite;
+}
+
+/* Section scroll margin for fixed nav */
+section[id] {
+  scroll-margin-top: 32px;
+}
