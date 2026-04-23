@@ -1,4 +1,5 @@
 import FadeUp from "@/components/FadeUp";
+import RLAPillarCard from "@/components/RLAPillarCard";
 
 const pillars = [
   {
@@ -70,40 +71,15 @@ export default function RLA() {
         </p>
       </FadeUp>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl items-start">
         {pillars.map((pillar, i) => (
-          <FadeUp key={pillar.number} delay={0.07 * i} className="h-full">
-            <div className="border border-[#1e1e1e] rounded-xl p-6 bg-[#111111] h-full flex flex-col hover:border-gold/30 transition-colors duration-300">
-              {/* Number */}
-              <span className="font-display text-[40px] font-light text-muted/25 leading-none mb-4 select-none">
-                {pillar.number}
-              </span>
-
-              {/* Title */}
-              <h3 className="font-display text-[17px] font-semibold text-cream leading-snug mb-3">
-                {pillar.title}
-              </h3>
-
-              {/* Description */}
-              <p className="font-body text-[12.5px] text-muted leading-relaxed mb-3">
-                {pillar.description}
-              </p>
-
-              {/* Divider + Tags pushed to bottom */}
-              <div className="mt-auto">
-                <hr className="border-[#1e1e1e] mb-4" />
-                <div className="flex flex-wrap gap-1.5">
-                  {pillar.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <FadeUp key={pillar.number} delay={0.07 * i}>
+            <RLAPillarCard
+              number={pillar.number}
+              title={pillar.title}
+              description={pillar.description}
+              tags={pillar.tags}
+            />
           </FadeUp>
         ))}
       </div>
