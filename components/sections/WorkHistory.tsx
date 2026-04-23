@@ -7,7 +7,7 @@ const history = [
     org: "Independent — Southeast Asia",
     location: "Bangkok & Phuket",
     description:
-      "Embedded growth leadership for premium hospitality and wellness brands across Thailand. Engagements range from 2-week diagnostics to 24-month embedded CMO roles.",
+      "Embedded growth leadership for premium hospitality and wellness brands across Thailand. Engagements range from 15-day diagnostics to multi-year embedded partnerships. Currently active.",
   },
   {
     period: "2019 – 2022",

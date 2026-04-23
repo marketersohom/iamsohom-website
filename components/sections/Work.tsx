@@ -4,20 +4,23 @@ const caseStudies = [
   {
     sector: "Wellness",
     location: "Phuket, Thailand",
-    metric: "35%+ YoY Revenue Growth",
-    duration: "24-month engagement",
+    metric: "46% Revenue Growth, Year One",
+    duration: "Ongoing Engagement",
     description:
-      "Behavioral audit identified pricing gaps, booking friction, and under-monetised corporate partnerships. Delivered embedded growth leadership over two years.",
+      "Behavioral audit identified pricing gaps, booking friction, and under-monetised corporate partnerships. Embedded growth leadership ongoing since 2023.",
+    result: null,
     tags: ["Embedded Consulting", "Pricing Strategy", "Partnership Development"],
   },
   {
     sector: "Hospitality",
     location: "Phuket, Thailand",
     metric: "Full Revenue Leak Map",
-    duration: "2-week diagnostic",
+    duration: "15-Day Diagnostic",
     description:
-      "Delivered a complete revenue leak map across 6 operational areas. Client implemented 4 of 6 recommendations within 90 days of the diagnostic.",
-    tags: ["Rapid Diagnostic", "Operational Audit", "Implementation Support"],
+      "A 15-day behavioral audit delivered a complete revenue leak map across 6 operational areas. Client implemented 4 of 6 recommendations within 90 days.",
+    result:
+      "Booking conversion improved 18 percentage points within six months of implementing the follow-up protocol.",
+    tags: ["15-Day Diagnostic", "Operational Audit", "Implementation Support"],
   },
 ];
 
@@ -57,6 +60,11 @@ export default function Work() {
               <p className="font-body text-[13px] text-muted leading-relaxed mb-4">
                 {cs.description}
               </p>
+              {cs.result && (
+                <p className="font-body text-[13px] text-cream/70 leading-relaxed border-l-2 border-gold/40 pl-3 mb-4">
+                  {cs.result}
+                </p>
+              )}
               <div className="flex flex-wrap gap-2">
                 {cs.tags.map((tag) => (
                   <span
