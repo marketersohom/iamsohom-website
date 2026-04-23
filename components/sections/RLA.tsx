@@ -72,7 +72,7 @@ export default function RLA() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl">
         {pillars.map((pillar, i) => (
-          <FadeUp key={pillar.number} delay={0.07 * i}>
+          <FadeUp key={pillar.number} delay={0.07 * i} className="h-full">
             <div className="border border-[#1e1e1e] rounded-xl p-6 bg-[#111111] h-full flex flex-col hover:border-gold/30 transition-colors duration-300">
               {/* Number */}
               <span className="font-display text-[40px] font-light text-muted/25 leading-none mb-4 select-none">
@@ -89,19 +89,19 @@ export default function RLA() {
                 {pillar.description}
               </p>
 
-              {/* Divider */}
-              <hr className="border-[#1e1e1e] mb-5 mt-auto" />
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-1.5">
-                {pillar.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Divider + Tags pushed to bottom */}
+              <div className="mt-auto">
+                <hr className="border-[#1e1e1e] mb-5" />
+                <div className="flex flex-wrap gap-1.5">
+                  {pillar.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </FadeUp>
