@@ -35,7 +35,7 @@ export default function Work() {
 
       <FadeUp delay={0.05}>
         <h2 className="font-display text-[36px] md:text-[44px] font-light text-cream leading-[1.15] mb-12 max-w-xl">
-          Selected Engagements.
+          Two engagements. Real numbers.
         </h2>
       </FadeUp>
 
@@ -57,11 +57,11 @@ export default function Work() {
               <p className="font-display text-[22px] font-medium text-gold mb-3">
                 {cs.metric}
               </p>
-              <p className="font-body text-[13px] text-muted leading-relaxed mb-4">
+              <p className="font-body text-[14px] text-muted leading-relaxed mb-4">
                 {cs.description}
               </p>
               {cs.result && (
-                <p className="font-body text-[13px] text-cream/70 leading-relaxed border-l-2 border-gold/40 pl-3 mb-4">
+                <p className="font-body text-[14px] text-cream/70 leading-relaxed border-l-2 border-gold/40 pl-3 mb-4">
                   {cs.result}
                 </p>
               )}

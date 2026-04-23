@@ -74,11 +74,11 @@ export default function Sidebar() {
       <motion.div variants={itemVariants} className="px-7 mb-6 space-y-2">
         <div className="flex items-center gap-2">
           <span className="text-muted text-xs">&#9679;</span>
-          <span className="font-body text-[12px] text-muted">Bangkok, Thailand</span>
+          <span className="font-body text-[13px] text-muted">Bangkok, Thailand</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-muted text-xs">&#9679;</span>
-          <span className="font-body text-[12px] text-muted">EN · BN · HI</span>
+          <span className="font-body text-[13px] text-muted">English · Bengali · Hindi</span>
         </div>
       </motion.div>
 

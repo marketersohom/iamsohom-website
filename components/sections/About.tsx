@@ -23,7 +23,7 @@ export default function About() {
       </FadeUp>
 
       <FadeUp delay={0.13}>
-        <p className="font-body text-[14px] text-muted leading-relaxed max-w-xl mb-10">
+        <p className="font-body text-[16px] text-muted leading-relaxed max-w-xl mb-10">
           I created the Revenue Leak Architecture as a structured response to a pattern I kept
           seeing: premium brands with strong operations and loyal customers losing revenue through
           structural gaps that traditional consultants were not designed to find.

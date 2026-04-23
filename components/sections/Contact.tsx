@@ -35,7 +35,7 @@ export default function Contact() {
       </FadeUp>
 
       <FadeUp delay={0.08}>
-        <p className="font-body text-[14px] text-muted leading-relaxed max-w-md mb-12">
+        <p className="font-body text-[16px] text-muted leading-relaxed max-w-md mb-12">
           Two ways in, depending on what you need.
         </p>
       </FadeUp>
@@ -53,7 +53,7 @@ export default function Contact() {
                 <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mb-4">
                   {opt.type}
                 </p>
-                <p className="font-body text-[14px] text-muted leading-relaxed mb-8">
+                <p className="font-body text-[15px] text-muted leading-relaxed mb-8">
                   {opt.description}
                 </p>
               </div>
