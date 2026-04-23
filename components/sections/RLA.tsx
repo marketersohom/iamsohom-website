@@ -5,7 +5,7 @@ const pillars = [
     number: "01",
     title: "Digital and Brand Audit",
     description:
-      "Online presence, booking flow, and conversion gaps. Where potential guests arrive, what they find, and where they leave.",
+      "Full review of digital assets including website UX efficiency, funnel flow, messaging alignment, SEO, marketing ROI, tech stack integration, and data tracking. We find where digital spend generates no compounding return and benchmark every finding against how your top competitors show up digitally.",
     tags: [
       "Website UX",
       "Funnel Flow",
@@ -19,7 +19,7 @@ const pillars = [
     number: "02",
     title: "Live Experience Audit",
     description:
-      "Ghost shopping, customer journey mapping, and trust signal assessment across every physical touchpoint.",
+      "Trained ghost shoppers physically engage your business as real customers. We test booking processes, customer service quality, follow-up sequences, and staff behaviour, then run the same ghost shopping exercise on your top competitors. You learn exactly how far behind or ahead you are.",
     tags: [
       "Ghost Shopping",
       "CX Testing",
@@ -33,7 +33,7 @@ const pillars = [
     number: "03",
     title: "Operational and Financial Audit",
     description:
-      "Pricing architecture, staff systems, and financial structure. The infrastructure beneath the surface.",
+      "We go inside the business. Past revenue data, expense patterns, internal team bottlenecks, department silos, and capacity constraints are all examined. Growth built on a broken operation fails the moment it scales. We also map competitor pricing architecture and market positioning so you can see where the operational opportunity actually sits.",
     tags: [
       "Revenue Data",
       "Expense Analysis",
@@ -85,13 +85,13 @@ export default function RLA() {
               </h3>
 
               {/* Description */}
-              <p className="font-body text-[12.5px] text-muted leading-relaxed mb-5">
+              <p className="font-body text-[12.5px] text-muted leading-relaxed mb-3">
                 {pillar.description}
               </p>
 
               {/* Divider + Tags pushed to bottom */}
               <div className="mt-auto">
-                <hr className="border-[#1e1e1e] mb-5" />
+                <hr className="border-[#1e1e1e] mb-4" />
                 <div className="flex flex-wrap gap-1.5">
                   {pillar.tags.map((tag) => (
                     <span
