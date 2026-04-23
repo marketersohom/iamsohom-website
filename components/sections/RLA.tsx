@@ -71,7 +71,14 @@ export default function RLA() {
         </p>
       </FadeUp>
 
-      <div className="flex flex-col gap-3 max-w-3xl">
+      <div
+        className="max-w-3xl"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "18px",
+        }}
+      >
         {pillars.map((pillar, i) => (
           <FadeUp key={pillar.number} delay={0.07 * i}>
             <RLAPillarCard
