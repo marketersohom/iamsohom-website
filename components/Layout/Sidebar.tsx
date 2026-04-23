@@ -49,8 +49,11 @@ export default function Sidebar() {
         <h1 className="font-display text-[22px] font-semibold text-cream leading-tight mb-1">
           Sohom Mukherjee
         </h1>
-        <p className="font-body text-[11px] font-medium tracking-[0.18em] text-gold uppercase mb-4">
+        <p className="font-body text-[11px] font-medium tracking-[0.18em] text-gold uppercase mb-1.5">
           Revenue Leak Architect
+        </p>
+        <p className="font-body text-[9px] font-medium tracking-[0.16em] uppercase mb-4" style={{ color: "rgba(201,168,76,0.7)" }}>
+          Creator, Revenue Leak Architecture
         </p>
       </motion.div>
 
@@ -113,6 +116,13 @@ export default function Sidebar() {
         >
           Get in Touch
         </button>
+        <a
+          href="/sohom-mukherjee-cv.pdf"
+          download
+          className="w-full py-2.5 text-[12px] font-body font-medium tracking-wide border border-gold/30 text-gold/80 rounded-md hover:border-gold/60 hover:text-gold transition-all duration-200 text-center"
+        >
+          Download CV
+        </a>
       </motion.div>
     </motion.aside>
   );

@@ -29,7 +29,7 @@ export default function RLA() {
 
       <FadeUp delay={0.05}>
         <h2 className="font-display text-[36px] md:text-[44px] font-light text-cream leading-[1.15] mb-6 max-w-xl">
-          A methodology, not a service.
+          Creator of the Revenue Leak Architecture.
         </h2>
       </FadeUp>
 

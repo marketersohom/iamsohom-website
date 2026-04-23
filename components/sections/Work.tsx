@@ -1,4 +1,5 @@
 import FadeUp from "@/components/FadeUp";
+import SpotlightCard from "@/components/SpotlightCard";
 
 const caseStudies = [
   {
@@ -42,7 +43,7 @@ export default function Work() {
       <div className="space-y-4 max-w-2xl">
         {caseStudies.map((cs, i) => (
           <FadeUp key={cs.sector + cs.location} delay={0.05 * i}>
-            <div className="border border-[#1e1e1e] rounded-xl p-7 bg-[#111111] hover:border-gold/25 transition-colors duration-300">
+            <SpotlightCard className="border border-[#1e1e1e] rounded-xl p-7 hover:border-gold/25 transition-colors duration-300">
               <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="font-body text-[10px] tracking-[0.18em] uppercase text-gold border border-gold/40 rounded px-2 py-0.5">
                   {cs.sector}
@@ -75,7 +76,7 @@ export default function Work() {
                   </span>
                 ))}
               </div>
-            </div>
+            </SpotlightCard>
           </FadeUp>
         ))}
       </div>
