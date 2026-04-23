@@ -26,12 +26,10 @@ export default function RLAPillarCard({ number, title, description, tags }: RLAP
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative rounded-xl p-6 flex flex-col overflow-hidden transition-colors duration-300"
+      className="relative rounded-xl overflow-hidden"
       style={{
-        background: "#111111",
-        border: spotlight
-          ? "1px solid rgba(201,168,76,0.3)"
-          : "1px solid #1e1e1e",
+        background: "#131313",
+        border: spotlight ? "1px solid rgba(201,168,76,0.3)" : "1px solid #1e1e1e",
         transition: "border-color 250ms ease",
       }}
     >
@@ -40,40 +38,44 @@ export default function RLAPillarCard({ number, title, description, tags }: RLAP
         className="absolute inset-0 pointer-events-none"
         style={{
           background: spotlight
-            ? `radial-gradient(circle 200px at ${spotlight.x}px ${spotlight.y}px, rgba(201,168,76,0.08) 0%, transparent 70%)`
+            ? `radial-gradient(circle 260px at ${spotlight.x}px ${spotlight.y}px, rgba(201,168,76,0.07) 0%, transparent 70%)`
             : "none",
-          transition: spotlight ? "none" : "opacity 300ms ease",
           opacity: spotlight ? 1 : 0,
+          transition: spotlight ? "none" : "opacity 300ms ease",
         }}
       />
 
-      {/* Number */}
-      <span className="font-display text-[40px] font-light text-muted/25 leading-none mb-4 select-none relative z-10">
-        {number}
-      </span>
+      {/* Three-column row */}
+      <div className="relative z-10 flex items-start gap-0">
+        {/* Left — number + title (25%) */}
+        <div className="w-[25%] flex-shrink-0 p-6 pr-5 border-r border-[#1e1e1e]">
+          <span className="block font-display text-[36px] font-light leading-none text-muted/20 mb-3 select-none">
+            {number}
+          </span>
+          <h3 className="font-display text-[17px] font-semibold text-cream leading-snug">
+            {title}
+          </h3>
+        </div>
 
-      {/* Title */}
-      <h3 className="font-display text-[17px] font-semibold text-cream leading-snug mb-3 relative z-10">
-        {title}
-      </h3>
+        {/* Middle — description (45%) */}
+        <div className="w-[45%] flex-shrink-0 p-6 px-7 border-r border-[#1e1e1e]">
+          <p className="font-body text-[12.5px] text-muted leading-relaxed">
+            {description}
+          </p>
+        </div>
 
-      {/* Description */}
-      <p className="font-body text-[12.5px] text-muted leading-relaxed mb-3 relative z-10">
-        {description}
-      </p>
-
-      {/* Divider + Tags */}
-      <div className="mt-auto relative z-10">
-        <hr className="border-[#1e1e1e] mb-4" />
-        <div className="flex flex-wrap gap-1.5">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
-            >
-              {tag}
-            </span>
-          ))}
+        {/* Right — tags (30%) */}
+        <div className="flex-1 p-6 pl-6">
+          <div className="flex flex-wrap gap-1.5">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
