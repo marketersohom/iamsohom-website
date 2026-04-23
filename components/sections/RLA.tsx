@@ -62,7 +62,7 @@ export default function RLA() {
       </FadeUp>
 
       <FadeUp delay={0.1}>
-        <p className="font-body text-[16px] text-muted leading-relaxed max-w-xl mb-12">
+        <p className="font-body text-[16px] text-muted leading-[1.8] max-w-[620px] mb-12">
           The RLA helps a business owner stand back far enough to see the whole operation
           simultaneously. Most consultants fix one part — marketing, operations, or pricing. The RLA
           audits all three layers at the same time: digital presence, live customer experience, and

@@ -57,11 +57,11 @@ export default function Work() {
               <p className="font-display text-[22px] font-medium text-gold mb-3">
                 {cs.metric}
               </p>
-              <p className="font-body text-[14px] text-muted leading-relaxed mb-4">
+              <p className="font-body text-[16px] text-muted leading-[1.8] mb-4">
                 {cs.description}
               </p>
               {cs.result && (
-                <p className="font-body text-[14px] text-cream/70 leading-relaxed border-l-2 border-gold/40 pl-3 mb-4">
+                <p className="font-body text-[16px] text-cream/70 leading-[1.8] border-l-2 border-gold/40 pl-3 mb-4">
                   {cs.result}
                 </p>
               )}

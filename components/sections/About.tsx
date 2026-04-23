@@ -16,14 +16,14 @@ export default function About() {
       </FadeUp>
 
       <FadeUp delay={0.1}>
-        <p className="font-body text-[15px] text-muted leading-relaxed max-w-xl mb-5">
+        <p className="font-body text-[16px] text-muted leading-[1.8] max-w-[620px] mb-5">
           Most premium hospitality and wellness brands don&apos;t have a marketing problem. They
           have a systems problem that marketing keeps getting blamed for.
         </p>
       </FadeUp>
 
       <FadeUp delay={0.13}>
-        <p className="font-body text-[16px] text-muted leading-relaxed max-w-xl mb-10">
+        <p className="font-body text-[16px] text-muted leading-[1.8] max-w-[620px] mb-10">
           I created the Revenue Leak Architecture as a structured response to a pattern I kept
           seeing: premium brands with strong operations and loyal customers losing revenue through
           structural gaps that traditional consultants were not designed to find.
@@ -32,11 +32,11 @@ export default function About() {
 
       {/* Current Focus card */}
       <FadeUp delay={0.15}>
-        <div className="border border-[#1e1e1e] rounded-xl p-6 bg-[#111111] max-w-xl">
+        <div className="border border-[#1e1e1e] rounded-xl p-6 bg-[#111111] max-w-[620px]">
           <p className="font-body text-[11px] tracking-[0.18em] text-gold uppercase mb-3">
             Current Focus
           </p>
-          <p className="font-body text-[14px] text-cream/85 leading-relaxed">
+          <p className="font-body text-[15px] text-cream/85 leading-[1.8]">
             Embedded growth leadership and consulting for premium hospitality, wellness, and F&amp;B.
             Open to senior CMO and Head of Growth roles globally.
           </p>

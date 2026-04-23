@@ -61,7 +61,7 @@ const S = {
     zIndex: 1,
   },
   description: {
-    fontSize: "13px",
+    fontSize: "14px",
     lineHeight: 1.8,
     color: "#7a7469",
     fontWeight: 300,

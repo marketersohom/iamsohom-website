@@ -28,7 +28,7 @@ export default async function Writing() {
       </FadeUp>
 
       <FadeUp delay={0.08}>
-        <p className="font-body text-[13px] text-muted mb-10 max-w-md">
+        <p className="font-body text-[16px] text-muted leading-[1.8] mb-10 max-w-[620px]">
           All articles published on{" "}
           <a
             href="https://www.betagrowthpartners.com/blog"
@@ -44,10 +44,10 @@ export default async function Writing() {
 
       {posts.length === 0 ? (
         <FadeUp delay={0.1}>
-          <p className="font-body text-[13px] text-muted">No posts available at this time.</p>
+          <p className="font-body text-[16px] text-muted leading-[1.8]">No posts available at this time.</p>
         </FadeUp>
       ) : (
-        <div className="space-y-4 max-w-2xl">
+        <div className="space-y-4 max-w-[620px]">
           {posts.map((post, i) => (
             <FadeUp key={post.slug} delay={0.06 * i}>
               <a
@@ -65,7 +65,7 @@ export default async function Writing() {
                       {post.title}
                     </h3>
                     {post.excerpt && (
-                      <p className="font-body text-[13px] text-muted leading-relaxed line-clamp-2">
+                      <p className="font-body text-[14px] text-muted leading-[1.8] line-clamp-2">
                         {post.excerpt}
                       </p>
                     )}

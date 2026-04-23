@@ -74,7 +74,7 @@ export default function WorkHistory() {
                     {item.role}
                   </h3>
                   <p className="font-body text-[13px] text-gold/80 mb-2">{item.org}</p>
-                  <p className="font-body text-[14px] text-muted leading-relaxed">
+                  <p className="font-body text-[16px] text-muted leading-[1.8]">
                     {item.description}
                   </p>
                 </div>
@@ -106,7 +106,7 @@ export default function WorkHistory() {
                   <h3 className="font-display text-[18px] font-medium text-cream mb-1.5">
                     {item.degree}
                   </h3>
-                  <p className="font-body text-[14px] text-muted leading-relaxed">
+                  <p className="font-body text-[16px] text-muted leading-[1.8]">
                     {item.detail}
                   </p>
                 </div>
