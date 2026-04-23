@@ -15,12 +15,11 @@ const caseStudies = [
   {
     sector: "Hospitality",
     location: "Phuket, Thailand",
-    metric: "Full Revenue Leak Map",
+    metric: "18% Booking Conversion Uplift",
     duration: "15-Day Diagnostic",
     description:
       "A 15-day behavioral audit delivered a complete revenue leak map across 6 operational areas. Client implemented 4 of 6 recommendations within 90 days.",
-    result:
-      "Booking conversion improved 18 percentage points within six months of implementing the follow-up protocol.",
+    result: null,
     tags: ["15-Day Diagnostic", "Operational Audit", "Implementation Support"],
   },
 ];
