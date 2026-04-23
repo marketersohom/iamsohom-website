@@ -72,22 +72,26 @@ export default function RLA() {
       </FadeUp>
 
       <div
-        className="max-w-3xl"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateColumns: "1fr 1fr",
           gap: "18px",
         }}
       >
         {pillars.map((pillar, i) => (
-          <FadeUp key={pillar.number} delay={0.07 * i}>
-            <RLAPillarCard
-              number={pillar.number}
-              title={pillar.title}
-              description={pillar.description}
-              tags={pillar.tags}
-            />
-          </FadeUp>
+          <div
+            key={pillar.number}
+            style={i === 2 ? { gridColumn: "1 / -1" } : undefined}
+          >
+            <FadeUp delay={0.07 * i}>
+              <RLAPillarCard
+                number={pillar.number}
+                title={pillar.title}
+                description={pillar.description}
+                tags={pillar.tags}
+              />
+            </FadeUp>
+          </div>
         ))}
       </div>
     </section>
