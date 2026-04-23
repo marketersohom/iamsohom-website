@@ -2,19 +2,46 @@ import FadeUp from "@/components/FadeUp";
 
 const pillars = [
   {
-    title: "Digital Audit",
+    number: "01",
+    title: "Digital and Brand Audit",
     description:
       "Online presence, booking flow, and conversion gaps. Where potential guests arrive, what they find, and where they leave.",
+    tags: [
+      "Website UX",
+      "Funnel Flow",
+      "Marketing ROI",
+      "Tech Stack",
+      "Data Analytics",
+      "Competitive Benchmarking",
+    ],
   },
   {
-    title: "Live Experience",
+    number: "02",
+    title: "Live Experience Audit",
     description:
       "Ghost shopping, customer journey mapping, and trust signal assessment across every physical touchpoint.",
+    tags: [
+      "Ghost Shopping",
+      "CX Testing",
+      "Booking Flow",
+      "Follow-Up",
+      "Review Analysis",
+      "Competitor Experience",
+    ],
   },
   {
-    title: "Operational Layer",
+    number: "03",
+    title: "Operational and Financial Audit",
     description:
       "Pricing architecture, staff systems, and financial structure. The infrastructure beneath the surface.",
+    tags: [
+      "Revenue Data",
+      "Expense Analysis",
+      "Ops Bottlenecks",
+      "Team Structure",
+      "Capacity Planning",
+      "Market Positioning",
+    ],
   },
 ];
 
@@ -45,15 +72,37 @@ export default function RLA() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl">
         {pillars.map((pillar, i) => (
-          <FadeUp key={pillar.title} delay={0.05 * i}>
-            <div className="border border-[#1e1e1e] rounded-xl p-5 bg-[#111111] h-full hover:border-gold/30 transition-colors duration-300 group">
-              <div className="w-6 h-0.5 bg-gold mb-4 group-hover:w-8 transition-all duration-300" />
-              <h3 className="font-display text-[18px] font-medium text-cream mb-3">
+          <FadeUp key={pillar.number} delay={0.07 * i}>
+            <div className="border border-[#1e1e1e] rounded-xl p-6 bg-[#111111] h-full flex flex-col hover:border-gold/30 transition-colors duration-300">
+              {/* Number */}
+              <span className="font-display text-[40px] font-light text-muted/25 leading-none mb-4 select-none">
+                {pillar.number}
+              </span>
+
+              {/* Title */}
+              <h3 className="font-display text-[17px] font-semibold text-cream leading-snug mb-3">
                 {pillar.title}
               </h3>
-              <p className="font-body text-[13px] text-muted leading-relaxed">
+
+              {/* Description */}
+              <p className="font-body text-[12.5px] text-muted leading-relaxed mb-5">
                 {pillar.description}
               </p>
+
+              {/* Divider */}
+              <hr className="border-[#1e1e1e] mb-5 mt-auto" />
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-1.5">
+                {pillar.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="font-body text-[10px] tracking-wide text-gold/70 border border-gold/25 rounded-full px-2.5 py-0.5"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </FadeUp>
         ))}
