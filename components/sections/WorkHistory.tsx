@@ -15,7 +15,7 @@ const history = [
     org: "Digital Agency",
     location: "Kolkata",
     description:
-      "Co-founded in 2018 as an MBA incubation project and scaled the agency to a 17-person team over four years. Served clients across FMCG, energy, hospitality, architecture and construction, medical, and education sectors, primarily across Asia. Operated as a generalist before the deliberate pivot to premium hospitality, wellness, and F&B in 2022. The foundation that later became Generation Beta.",
+      "Co-founded in 2018 as an MBA incubation project and scaled the agency to a 17-person team over four years. Served FMCG, energy, hospitality, architecture and construction, medical, and education sectors, primarily across Asia. Selected outcomes include a national solar energy client retained 3 years (performance marketing delivered +39% lead gen in 5 initial regions, scaled to 28 regions at +61% overall), 3 simultaneous activation campaigns across 3 states for a national FMCG brand, and +31% bookings in 4 months for a regional hotel. The foundation that later became Generation Beta.",
   },
   {
     period: "2019 – 2020",
@@ -23,7 +23,7 @@ const history = [
     org: "National FMCG Brand",
     location: "Eastern India",
     description:
-      "Mandatory MBA placement role taken alongside running the agency. Managed distributor networks and field sales teams across a multi-state territory. Worked at both retail and distribution level: dealer onboarding, distributor relationships, vendor negotiations, and regional influencer programs. Hands-on field exposure that complemented the agency's digital-first work.",
+      "Sales and marketing remit reporting directly to the President of the national company. Started a new vertical in the assigned region and achieved 150% of sales target. Managed a team of 7 (executives and area sales managers) across distributor networks and field sales teams. Worked at both retail and distribution level: dealer onboarding, distributor relationships, vendor negotiations, and regional influencer programs.",
   },
 ];
 

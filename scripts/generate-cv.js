@@ -123,6 +123,7 @@ const experience = [
     bullets: [
       "Co-founded the agency in 2018 as an MBA incubation project. Scaled it to a 17-person team over four years and continued running it through and after the MBA placement (see 2019—2020 below).",
       "Served clients across FMCG, energy, hospitality, architecture and construction, medical, and education sectors, primarily across Asia.",
+      "Selected outcomes: national solar energy client retained 3 years (performance marketing delivered +39% lead gen in initial 5 regions, scaled to 28 regions at +61% overall lift); 3 simultaneous activation campaigns across 3 states for a national FMCG brand; +31% bookings in 4 months for a regional hotel.",
       "Operated as a generalist agency before the deliberate pivot to premium hospitality, wellness, and F&B in 2022 — the foundation that became Generation Beta.",
       "Led strategy, business development, client growth, and team management.",
     ],
@@ -132,10 +133,11 @@ const experience = [
     role: "Area Sales Manager (MBA placement, concurrent with agency)",
     org: "National FMCG Brand  ·  Eastern India",
     bullets: [
-      "Mandatory MBA placement role taken alongside running the agency. Managed distributor networks and field sales teams across a multi-state territory.",
+      "Sales and marketing remit reporting directly to the President of the national company.",
+      "Started a new vertical in the assigned region and achieved 150% of sales target.",
+      "Managed a team of 7 (sales executives and area sales managers) across distributor networks and field sales teams in a multi-state territory.",
       "Worked at both retail and distribution level: dealer onboarding, distributor relationship management, vendor negotiations, and regional influencer programs.",
-      "Consistently delivered above-target revenue growth across territory.",
-      "Hands-on field exposure complementing the agency's digital-first work — distribution chain, on-ground sales operations, and large field-team management.",
+      "Hands-on field exposure complementing the agency's digital-first work — distribution chain, on-ground sales operations, and field-team leadership.",
     ],
   },
 ];
