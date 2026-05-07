@@ -15,15 +15,15 @@ const history = [
     org: "Digital Agency",
     location: "Kolkata",
     description:
-      "Co-founded and directed a performance-focused digital agency serving hospitality, retail, and healthcare clients across India. Led strategy, business development, and client growth.",
+      "Co-founded in 2018 as an MBA incubation project and scaled the agency to a 17-person team over four years. Served clients across FMCG, energy, hospitality, architecture and construction, medical, and education sectors, primarily across Asia. Operated as a generalist before the deliberate pivot to premium hospitality, wellness, and F&B in 2022. The foundation that later became Generation Beta.",
   },
   {
     period: "2019 – 2020",
-    role: "Area Sales Manager",
+    role: "Area Sales Manager (MBA placement, concurrent with agency)",
     org: "National FMCG Brand",
     location: "Eastern India",
     description:
-      "College placement role managing distributor networks and field sales teams across a multi-state territory. Worked at both retail and distribution level. Consistently delivered above-target revenue growth.",
+      "Mandatory MBA placement role taken alongside running the agency. Managed distributor networks and field sales teams across a multi-state territory. Worked at both retail and distribution level: dealer onboarding, distributor relationships, vendor negotiations, and regional influencer programs. Hands-on field exposure that complemented the agency's digital-first work.",
   },
 ];
 

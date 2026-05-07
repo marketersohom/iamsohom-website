@@ -33,19 +33,14 @@ const caseStudies: CaseStudy[] = [
     location: "Thailand",
     duration: "2+ years, active",
     metrics: [
-      { value: "+48%", label: "Revenue, Year 1", primary: true },
+      { value: "+46%", label: "Revenue, Year 1", primary: true },
       { value: "+84%", label: "Revenue, Year 2" },
       { value: "7", label: "New partnerships" },
       { value: "4.6", label: "Google score, from 4.2" },
     ],
     description:
       "Three locations at a revenue plateau. The audit identified pricing 22% below comparable competitors, a 45% drop-off in the booking flow, and 38 unanswered negative reviews suppressing search conversion. We rebuilt the revenue architecture across pricing, booking, and reputation.",
-    testimonial: {
-      quote:
-        "Sohom has been our growth partner for over two years now. He's practically part of our internal team. Our monthly revenue has grown 46% in the first year.",
-      author: "Jim Sutherland",
-      role: "Partner, Amla Spa Group",
-    },
+    testimonial: null,
     tags: ["Revenue Architecture", "Pricing", "Booking Flow", "Reputation"],
     caseStudyHref: "https://www.betagrowthpartners.com/work",
   },
