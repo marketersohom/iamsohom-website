@@ -49,7 +49,7 @@ export default function NavRail() {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed left-0 top-0 h-full w-16 bg-[#080808] border-r border-[#1e1e1e] flex flex-col items-center justify-center gap-2 z-40"
+      className="hidden lg:flex fixed left-0 top-0 h-full w-16 bg-[#080808] border-r border-[#1e1e1e] flex-col items-center justify-center gap-2 z-40"
     >
       {navItems.map(({ id, icon: Icon, label }) => (
         <button

@@ -29,7 +29,7 @@ export default function Sidebar() {
       variants={containerVariants}
       initial="hidden"
       animate="show"
-      className="fixed left-16 top-0 h-full w-[280px] bg-[#0d0d0d] border-r border-[#1e1e1e] flex flex-col overflow-y-auto z-30"
+      className="hidden lg:flex fixed left-16 top-0 h-full w-[280px] bg-[#0d0d0d] border-r border-[#1e1e1e] flex-col overflow-y-auto z-30"
     >
       {/* Profile photo */}
       <motion.div variants={itemVariants} className="px-7 pt-10">

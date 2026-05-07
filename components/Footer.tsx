@@ -2,7 +2,7 @@ import { Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1e1e1e] py-8 px-10 flex items-center justify-between">
+    <footer className="border-t border-[#1e1e1e] py-8 px-5 sm:px-7 md:px-10 flex items-center justify-between">
       <p className="text-muted text-sm font-body tracking-wide">
         Sohom Mukherjee &copy; 2026
       </p>

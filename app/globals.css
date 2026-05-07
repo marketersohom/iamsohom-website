@@ -59,7 +59,12 @@ body {
   animation: gold-pulse 2.5s ease-in-out infinite;
 }
 
-/* Section scroll margin for fixed nav */
+/* Section scroll margin for fixed nav. Bigger on mobile to clear the 56px header. */
 section[id] {
-  scroll-margin-top: 32px;
+  scroll-margin-top: 72px;
+}
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 32px;
+  }
 }

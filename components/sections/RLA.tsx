@@ -71,17 +71,11 @@ export default function RLA() {
         </p>
       </FadeUp>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "18px",
-        }}
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[18px]">
         {pillars.map((pillar, i) => (
           <div
             key={pillar.number}
-            style={i === 2 ? { gridColumn: "1 / -1" } : undefined}
+            className={i === 2 ? "md:col-span-2" : undefined}
           >
             <FadeUp delay={0.07 * i}>
               <RLAPillarCard

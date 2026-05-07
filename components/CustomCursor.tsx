@@ -14,9 +14,21 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const [visible, setVisible] = useState(false);
   const [trail, setTrail] = useState<TrailDot[]>([]);
+  const [enabled, setEnabled] = useState(false);
   const trailIdRef = useRef(0);
 
+  // Only enable on devices with a precise pointer. Skips touchscreens.
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    setEnabled(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setEnabled(e.matches);
+    mq.addEventListener?.("change", onChange);
+    return () => mq.removeEventListener?.("change", onChange);
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
     const onMove = (e: MouseEvent) => {
       const x = e.clientX;
       const y = e.clientY;
@@ -46,9 +58,9 @@ export default function CustomCursor() {
       document.documentElement.removeEventListener("mouseleave", onLeave);
       document.documentElement.removeEventListener("mouseenter", onEnter);
     };
-  }, [visible]);
+  }, [visible, enabled]);
 
-  if (!visible) return null;
+  if (!enabled || !visible) return null;
 
   return (
     <>
