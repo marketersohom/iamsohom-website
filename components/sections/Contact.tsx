@@ -3,16 +3,16 @@ import { ArrowUpRight } from "lucide-react";
 
 const options = [
   {
-    type: "Consulting",
+    type: "Consulting via Generation Beta",
     description:
-      "For premium hospitality, wellness, and F&B brands in Southeast Asia.",
+      "For premium hospitality, wellness, and F&B brands across Asia. Delivered through the agency.",
     cta: "Start a Diagnostic",
     href: "https://www.betagrowthpartners.com/diagnostic",
     external: true,
   },
   {
-    type: "Senior Roles",
-    description: "CMO and Head of Growth roles globally.",
+    type: "Senior In-House Roles",
+    description: "CMO and Head of Growth roles across Asia. Direct reach.",
     cta: "Send a Note",
     href: "mailto:sohom@betagrowthpartners.com",
     external: false,

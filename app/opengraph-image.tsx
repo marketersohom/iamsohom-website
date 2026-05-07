@@ -77,7 +77,7 @@ export default async function OpengraphImage() {
             letterSpacing: "0.08em",
           }}
         >
-          <span>Hospitality &middot; Wellness &middot; F&amp;B</span>
+          <span>Hospitality &middot; Wellness &middot; F&amp;B &middot; Across Asia</span>
           <span style={{ color: "#c9a84c" }}>iamsohom.com</span>
         </div>
       </div>

@@ -62,7 +62,7 @@ export default function Sidebar() {
         <div className="flex items-start gap-2.5 bg-gold/5 border border-gold/20 rounded-lg px-3 py-2.5">
           <span className="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-gold pulse-gold" />
           <span className="font-body text-[11px] text-cream/80 leading-relaxed">
-            Available for engagements &amp; senior roles
+            Open to senior roles across Asia &middot; Consulting via Generation Beta
           </span>
         </div>
       </motion.div>

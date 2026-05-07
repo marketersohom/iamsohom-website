@@ -3,11 +3,11 @@ import FadeUp from "@/components/FadeUp";
 const history = [
   {
     period: "2022 – Present",
-    role: "Embedded Growth Consultant",
-    org: "Independent — Southeast Asia",
+    role: "Founder & Lead Strategist",
+    org: "Generation Beta (betagrowthpartners.com)",
     location: "Bangkok & Phuket",
     description:
-      "Embedded growth leadership for premium hospitality and wellness brands across Thailand. Engagements range from 15-day diagnostics to multi-year embedded partnerships. Currently active.",
+      "Founded the agency to deliver the Revenue Leak Architecture for premium hospitality, wellness, and F&B brands across Asia. Engagements range from 15-day behavioural diagnostics to multi-year embedded growth partnerships. Active.",
   },
   {
     period: "2018 – 2022",

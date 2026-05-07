@@ -22,9 +22,10 @@ const jost = Jost({
 });
 
 const SITE_URL = "https://iamsohom.com";
-const TITLE = "Sohom Mukherjee | Revenue Leak Architect, Head of Growth, CMO";
+const TITLE =
+  "Sohom Mukherjee | Revenue Leak Architect, Head of Growth & CMO across Asia";
 const DESCRIPTION =
-  "Growth strategist, Head of Growth and Marketing Leader for premium hospitality, wellness, and F&B brands. Creator of the Revenue Leak Architecture.";
+  "Creator of the Revenue Leak Architecture. Senior CMO and Head of Growth across Asia. Consulting via Generation Beta for hospitality, wellness, and F&B brands.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,14 +39,22 @@ export const metadata: Metadata = {
     "Revenue Leak Architect",
     "Head of Growth",
     "CMO",
+    "Chief Marketing Officer",
     "Marketing Leader",
     "Growth Consultant",
     "Hospitality Growth",
     "Wellness Growth",
     "F&B Marketing",
+    "Asia",
+    "APAC",
     "Southeast Asia",
+    "India",
+    "Indian hospitality",
+    "Singapore",
     "Bangkok",
     "Phuket",
+    "Generation Beta",
+    "Beta Growth Partners",
   ],
   authors: [{ name: "Sohom Mukherjee", url: SITE_URL }],
   creator: "Sohom Mukherjee",
@@ -86,21 +95,32 @@ const personSchema = {
   name: "Sohom Mukherjee",
   url: SITE_URL,
   image: `${SITE_URL}/portrait_about.jpg`,
-  jobTitle: "Revenue Leak Architect, Head of Growth, CMO Consultant",
+  jobTitle: "Revenue Leak Architect, Head of Growth, CMO",
   description: DESCRIPTION,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bangkok",
+    addressRegion: "Asia",
     addressCountry: "TH",
   },
   knowsLanguage: ["en", "bn", "hi"],
+  knowsAbout: [
+    "Growth Strategy",
+    "Hospitality Marketing",
+    "Wellness Marketing",
+    "F&B Marketing",
+    "Revenue Leak Architecture",
+    "Behavioural Psychology",
+    "Asia Pacific Markets",
+  ],
   sameAs: [
     "https://linkedin.com/in/digitalsohom-mukherjee",
     "https://www.betagrowthpartners.com",
   ],
   worksFor: {
     "@type": "Organization",
-    name: "Beta Growth Partners",
+    name: "Generation Beta",
+    alternateName: "Beta Growth Partners",
     url: "https://www.betagrowthpartners.com",
   },
 };

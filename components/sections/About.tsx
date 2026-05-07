@@ -36,9 +36,21 @@ export default function About() {
           <p className="font-body text-[11px] tracking-[0.18em] text-gold uppercase mb-3">
             Current Focus
           </p>
+          <p className="font-body text-[15px] text-cream/85 leading-[1.8] mb-3">
+            Consulting engagements run through{" "}
+            <a
+              href="https://www.betagrowthpartners.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold/90 hover:text-gold underline underline-offset-4 decoration-gold/30 transition-colors"
+            >
+              Generation Beta
+            </a>
+            , the agency I founded to deliver the Revenue Leak Architecture for premium
+            hospitality, wellness, and F&amp;B brands.
+          </p>
           <p className="font-body text-[15px] text-cream/85 leading-[1.8]">
-            Embedded growth leadership and consulting for premium hospitality, wellness, and F&amp;B.
-            Open to senior CMO and Head of Growth roles globally.
+            In parallel, open to senior CMO and Head of Growth roles across Asia.
           </p>
         </div>
       </FadeUp>
