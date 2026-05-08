@@ -89,6 +89,53 @@ export const metadata: Metadata = {
   // Icons auto-generated from app/icon.svg
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Sohom Mukherjee?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sohom Mukherjee is the founder of Generation Beta and creator of the Revenue Leak Architecture. He is a senior growth strategist focused on premium hospitality, wellness, and F&B brands across Asia, and is open to senior CMO and Head of Growth roles.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the Revenue Leak Architecture?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Revenue Leak Architecture (RLA) is Sohom Mukherjee's proprietary methodology for diagnosing where premium brands lose revenue. It audits three layers of the business simultaneously: digital and brand presence, live customer experience including ghost shopping, and operational and financial structure. The framework reveals structural revenue gaps that traditional consulting methods miss.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Generation Beta?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Generation Beta, also known as Beta Growth Partners, is the consulting agency Sohom Mukherjee founded to deliver the Revenue Leak Architecture for premium hospitality, wellness, and F&B brands across Asia. Engagements range from 15-day diagnostic audits to multi-year embedded growth retainerships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Sohom Mukherjee based?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sohom Mukherjee is based in Bangkok, Thailand. He works with clients across Southeast Asia and India, with deep operating experience in both regions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What sectors does Sohom Mukherjee specialize in?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Premium hospitality, wellness, and food and beverage (F&B) brands across Asia. Documented client outcomes include Amla Spa Group (+46% revenue Year 1, +84% Year 2 across three locations) and Tony Meechai Executive Coaching (+36% coaching enquiries, 270+ pre-launch book waitlist).",
+      },
+    },
+  ],
+};
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -136,6 +183,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body className="bg-[#0a0a0a] text-cream font-body antialiased">
