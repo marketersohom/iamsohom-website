@@ -86,6 +86,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "19_4QbruUzNtXuiz-jEv2iIdc0lBO_8j_RIo9CHrmvQ",
+  },
   // Icons auto-generated from app/icon.svg
 };
 
