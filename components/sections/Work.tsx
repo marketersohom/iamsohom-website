@@ -110,13 +110,13 @@ export default function Work() {
             <SpotlightCard className="border border-[#1e1e1e] rounded-xl p-7 hover:border-gold/25 transition-colors duration-300">
               {/* Tag row */}
               <div className="flex flex-wrap items-center gap-2 mb-4">
-                <span className="font-body text-[10px] tracking-[0.18em] uppercase text-gold border border-gold/40 rounded px-2 py-0.5">
+                <span className="font-body text-[11px] tracking-[0.18em] uppercase text-gold border border-gold/40 rounded px-2 py-0.5">
                   {cs.sector}
                 </span>
-                <span className="font-body text-[10px] tracking-[0.14em] uppercase text-muted border border-[#2a2a2a] rounded px-2 py-0.5">
+                <span className="font-body text-[11px] tracking-[0.14em] uppercase text-muted border border-[#2a2a2a] rounded px-2 py-0.5">
                   {cs.location}
                 </span>
-                <span className="font-body text-[10px] tracking-[0.14em] uppercase text-muted border border-[#2a2a2a] rounded px-2 py-0.5">
+                <span className="font-body text-[11px] tracking-[0.14em] uppercase text-muted border border-[#2a2a2a] rounded px-2 py-0.5">
                   {cs.duration}
                 </span>
               </div>

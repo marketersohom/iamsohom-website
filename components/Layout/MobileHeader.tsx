@@ -49,7 +49,7 @@ export default function MobileHeader() {
           </div>
           <div className="leading-tight">
             <p className="font-display text-[15px] font-semibold text-cream">Sohom Mukherjee</p>
-            <p className="font-body text-[9px] tracking-[0.18em] text-gold uppercase">
+            <p className="font-body text-[10px] tracking-[0.18em] text-gold uppercase">
               Revenue Leak Architect
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function MobileHeader() {
               Revenue Leak Architect
             </p>
             <p
-              className="font-body text-[9px] font-medium tracking-[0.16em] uppercase mb-4"
+              className="font-body text-[11px] font-medium tracking-[0.16em] uppercase mb-4"
               style={{ color: "rgba(201,168,76,0.7)" }}
             >
               Creator, Revenue Leak Architecture
@@ -186,7 +186,7 @@ export default function MobileHeader() {
             >
               Download CV
             </a>
-            <p className="text-[10px] font-body text-muted text-center -mt-1.5 tracking-wide">
+            <p className="text-[11px] font-body text-muted text-center -mt-1.5 tracking-wide">
               Updated May 2026
             </p>
           </div>

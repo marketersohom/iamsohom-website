@@ -50,7 +50,7 @@ export default function Contact() {
               className="group flex flex-col justify-between border border-[#1e1e1e] rounded-xl p-7 bg-[#111111] hover:border-gold/35 transition-all duration-300 h-full"
             >
               <div>
-                <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mb-4">
+                <p className="font-body text-[11px] tracking-[0.2em] uppercase text-gold mb-4">
                   {opt.type}
                 </p>
                 <p className="font-body text-[16px] text-muted leading-[1.8] mb-8">
