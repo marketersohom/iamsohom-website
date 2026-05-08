@@ -1,10 +1,20 @@
 import FadeUp from "@/components/FadeUp";
 
-const history = [
+interface HistoryItem {
+  period: string;
+  role: string;
+  org: string;
+  orgHref?: string; // optional link target if the org has a website
+  location: string;
+  description: string;
+}
+
+const history: HistoryItem[] = [
   {
     period: "2022 – Present",
     role: "Founder & Lead Strategist",
     org: "Generation Beta (betagrowthpartners.com)",
+    orgHref: "https://www.betagrowthpartners.com",
     location: "Bangkok & Phuket",
     description:
       "Founded the agency to deliver the Revenue Leak Architecture for premium hospitality, wellness, and F&B brands across Asia. Engagements range from 15-day behavioural diagnostics to multi-year embedded growth partnerships. Active.",
@@ -73,7 +83,18 @@ export default function WorkHistory() {
                   <h3 className="font-display text-[18px] font-medium text-cream mb-0.5">
                     {item.role}
                   </h3>
-                  <p className="font-body text-[13px] text-gold/80 mb-2">{item.org}</p>
+                  {item.orgHref ? (
+                    <a
+                      href={item.orgHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-body text-[13px] text-gold/80 hover:text-gold transition-colors duration-200 mb-2 inline-block underline underline-offset-4 decoration-gold/30 hover:decoration-gold/60"
+                    >
+                      {item.org}
+                    </a>
+                  ) : (
+                    <p className="font-body text-[13px] text-gold/80 mb-2">{item.org}</p>
+                  )}
                   <p className="font-body text-[16px] text-muted leading-[1.8]">
                     {item.description}
                   </p>
