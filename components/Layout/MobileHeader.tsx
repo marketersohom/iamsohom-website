@@ -186,6 +186,9 @@ export default function MobileHeader() {
             >
               Download CV
             </a>
+            <p className="text-[10px] font-body text-muted text-center -mt-1.5 tracking-wide">
+              Updated May 2026
+            </p>
           </div>
         </div>
       </aside>

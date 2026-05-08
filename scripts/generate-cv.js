@@ -6,7 +6,7 @@ const path = require("path");
 const BLACK = "#0a0a0a";
 const GOLD = "#c9a84c";
 const CREAM = "#ede8df";
-const MUTED = "#7a7469";
+const MUTED = "#8e877a";
 const SURFACE = "#111111";
 
 const PAGE_W = 595.28;

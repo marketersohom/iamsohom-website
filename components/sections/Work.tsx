@@ -170,7 +170,7 @@ export default function Work() {
                 {cs.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="font-body text-[11px] text-muted/70 bg-[#0a0a0a] border border-[#1e1e1e] rounded px-2 py-0.5"
+                    className="font-body text-[11px] text-muted bg-[#0a0a0a] border border-[#1e1e1e] rounded px-2 py-0.5"
                   >
                     {tag}
                   </span>

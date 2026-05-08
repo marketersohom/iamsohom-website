@@ -63,7 +63,7 @@ const S = {
   description: {
     fontSize: "14px",
     lineHeight: 1.8,
-    color: "#7a7469",
+    color: "#8e877a",
     fontWeight: 300,
     marginBottom: "20px",
     position: "relative" as const,

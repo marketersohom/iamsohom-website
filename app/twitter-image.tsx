@@ -72,7 +72,7 @@ export default async function TwitterImage() {
             alignItems: "center",
             paddingTop: 28,
             borderTop: "1px solid rgba(201,168,76,0.25)",
-            color: "#7a7469",
+            color: "#8e877a",
             fontSize: 20,
             letterSpacing: "0.08em",
           }}
