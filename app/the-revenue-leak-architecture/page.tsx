@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, ArrowUpRight, Linkedin, Mail } from "lucide-react";
 import ReadingProgress from "@/components/article/ReadingProgress";
+import ArticlePillarCard from "@/components/article/ArticlePillarCard";
 
 const SITE_URL = "https://iamsohom.com";
 const ARTICLE_URL = `${SITE_URL}/the-revenue-leak-architecture`;
@@ -99,37 +101,120 @@ function BrandBlock({
   );
 }
 
-function PullQuote({ children }: { children: React.ReactNode }) {
+// Pull quote treatments — four different styles for visual variation
+
+// Style A: Centered, no border, italic. For early-article emphasis.
+function PullQuoteCentered({ children }: { children: React.ReactNode }) {
   return (
-    <blockquote className="my-12 md:my-14 border-l-2 border-gold/55 pl-6 md:pl-8">
-      <p className="font-display italic text-[24px] md:text-[30px] text-cream leading-[1.3] font-light">
+    <blockquote className="my-12 md:my-14 text-center px-4">
+      <p className="font-display italic text-[22px] md:text-[28px] text-cream/95 leading-[1.35] font-light max-w-[560px] mx-auto">
         {children}
       </p>
     </blockquote>
   );
 }
 
-function PillarCard({
-  number,
-  title,
-  children,
-}: {
-  number: string;
-  title: string;
-  children: React.ReactNode;
-}) {
+// Style B: Gold left border. The "default" pull quote.
+function PullQuoteLeft({ children }: { children: React.ReactNode }) {
   return (
-    <div className="border border-[#1e1e1e] rounded-xl p-7 md:p-8 my-7 bg-[#111111] relative overflow-hidden">
-      <div className="font-display italic font-light text-[44px] md:text-[52px] text-gold/35 leading-none mb-3">
-        {number}
-      </div>
-      <h3 className="font-display text-[22px] md:text-[24px] text-cream font-medium mb-5 leading-snug">
-        {title}
-      </h3>
-      <div className="space-y-5 font-body text-[15px] md:text-[16px] text-muted leading-[1.85]">
+    <blockquote className="my-12 md:my-14 border-l-2 border-gold/55 pl-6 md:pl-8">
+      <p className="font-display italic text-[22px] md:text-[28px] text-cream leading-[1.3] font-light">
         {children}
+      </p>
+    </blockquote>
+  );
+}
+
+// Style C: Top + bottom rules. Quieter, more minimal.
+function PullQuoteRules({ children }: { children: React.ReactNode }) {
+  return (
+    <blockquote className="my-12 md:my-14 py-7 md:py-8 border-y border-gold/30">
+      <p className="font-display italic text-[20px] md:text-[24px] text-cream/90 leading-[1.4] font-light">
+        {children}
+      </p>
+    </blockquote>
+  );
+}
+
+// Style D: Dramatic closing pull quote. Centered, large, with gold ornaments above and below.
+function PullQuoteClosing({ children }: { children: React.ReactNode }) {
+  return (
+    <blockquote className="my-14 md:my-16 text-center px-4">
+      <div className="flex items-center justify-center gap-2 mb-7" aria-hidden="true">
+        <div className="h-px w-16 bg-gold/35" />
+        <div className="w-1 h-1 rounded-full bg-gold" />
+        <div className="h-px w-16 bg-gold/35" />
       </div>
-    </div>
+      <p className="font-display italic text-[28px] md:text-[40px] text-cream leading-[1.2] font-light max-w-[640px] mx-auto">
+        {children}
+      </p>
+      <div className="flex items-center justify-center gap-2 mt-7" aria-hidden="true">
+        <div className="h-px w-16 bg-gold/35" />
+        <div className="w-1 h-1 rounded-full bg-gold" />
+        <div className="h-px w-16 bg-gold/35" />
+      </div>
+    </blockquote>
+  );
+}
+
+// Hero ornament — small SVG mark referencing the three pillars (abstract, geometric)
+function HeroOrnament() {
+  return (
+    <svg
+      width="56"
+      height="56"
+      viewBox="0 0 56 56"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      className="opacity-90"
+    >
+      <circle cx="20" cy="20" r="15" stroke="#c9a84c" strokeWidth="1" fill="rgba(201,168,76,0.04)" />
+      <circle cx="36" cy="20" r="15" stroke="#c9a84c" strokeWidth="1" fill="rgba(201,168,76,0.04)" />
+      <circle cx="28" cy="34" r="15" stroke="#c9a84c" strokeWidth="1" fill="rgba(201,168,76,0.04)" />
+      <circle cx="28" cy="25" r="1.4" fill="#c9a84c" />
+    </svg>
+  );
+}
+
+// Venn-style diagram for Section III. Three overlapping circles with the framework labels.
+function PillarsDiagram() {
+  return (
+    <figure className="my-10 md:my-12">
+      <div className="bg-[#0d0d0d] border border-[#1e1e1e] rounded-xl p-6 md:p-9">
+        <svg
+          viewBox="0 0 700 480"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto"
+          aria-label="Three overlapping pillars: Digital and Brand, Live Experience, Operational and Financial. Revenue leaks live in the gaps between them."
+        >
+          {/* Three overlapping circles */}
+          <circle cx="240" cy="210" r="160" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.4)" strokeWidth="1.2" />
+          <circle cx="460" cy="210" r="160" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.4)" strokeWidth="1.2" />
+          <circle cx="350" cy="350" r="160" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.4)" strokeWidth="1.2" />
+
+          {/* Pillar labels — gold tracking caps, positioned outside circles */}
+          <text x="120" y="80" fill="#c9a84c" fontSize="13" fontFamily="var(--font-jost), system-ui, sans-serif" fontWeight="500" letterSpacing="2">
+            DIGITAL &amp; BRAND
+          </text>
+          <text x="580" y="80" fill="#c9a84c" fontSize="13" fontFamily="var(--font-jost), system-ui, sans-serif" fontWeight="500" letterSpacing="2" textAnchor="end">
+            LIVE EXPERIENCE
+          </text>
+          <text x="350" y="465" fill="#c9a84c" fontSize="13" fontFamily="var(--font-jost), system-ui, sans-serif" fontWeight="500" letterSpacing="2" textAnchor="middle">
+            OPERATIONAL &amp; FINANCIAL
+          </text>
+
+          {/* Center marker for revenue leak zone */}
+          <circle cx="350" cy="265" r="6" fill="#c9a84c" />
+          <text x="350" y="295" fill="#ede8df" fontSize="14" fontFamily="var(--font-cormorant), Georgia, serif" fontStyle="italic" textAnchor="middle">
+            where revenue leaks live
+          </text>
+        </svg>
+      </div>
+      <figcaption className="font-body text-[12px] text-muted text-center mt-3 italic">
+        The Revenue Leak Architecture audits all three pillars simultaneously. The leaks live where the audits intersect.
+      </figcaption>
+    </figure>
   );
 }
 
@@ -200,7 +285,10 @@ export default function ArticlePage() {
           <article className="max-w-[720px] mx-auto">
             {/* HERO */}
             <header className="mb-14 md:mb-16">
-              <div className="font-body text-[11px] tracking-[0.28em] text-gold uppercase mb-6 font-medium">
+              <div className="mb-6">
+                <HeroOrnament />
+              </div>
+              <div className="font-body text-[11px] tracking-[0.28em] text-gold uppercase mb-5 font-medium">
                 Methodology · Essay
               </div>
               <h1 className="font-display text-[40px] md:text-[60px] font-light text-cream leading-[1.05] tracking-tight mb-5">
@@ -210,8 +298,12 @@ export default function ArticlePage() {
                 A methodology for finding the revenue your business is losing
                 without knowing it.
               </p>
-              <div className="font-body text-[12px] text-muted tracking-wide">
-                12 min read · Updated May 2026
+              <div className="flex items-center gap-3 font-body text-[12px] text-muted tracking-wide">
+                <span>By Sohom Mukherjee</span>
+                <span className="w-1 h-1 rounded-full bg-muted/50" />
+                <span>12 min read</span>
+                <span className="w-1 h-1 rounded-full bg-muted/50" />
+                <span>Updated May 2026</span>
               </div>
               <div className="h-px bg-gold/35 mt-8" />
             </header>
@@ -340,7 +432,10 @@ export default function ArticlePage() {
                 is one input.
               </p>
 
-              <PullQuote>Marketing is one input.</PullQuote>
+              <PullQuoteCentered>
+                Growth in this category is a systems problem, and marketing is
+                one input.
+              </PullQuoteCentered>
 
               <Divider />
 
@@ -379,9 +474,9 @@ export default function ArticlePage() {
                 already has just never comes up.
               </p>
 
-              <PullQuote>
+              <PullQuoteLeft>
                 Retention is rarely a marketing problem on its own.
-              </PullQuote>
+              </PullQuoteLeft>
 
               <p className="mb-6">
                 Retention is mathematically cheaper than acquisition in almost
@@ -420,7 +515,9 @@ export default function ArticlePage() {
                 layers are mapped together.
               </p>
 
-              <PillarCard number="01" title="Digital and Brand Audit">
+              <PillarsDiagram />
+
+              <ArticlePillarCard number="01" title="Digital and Brand Audit">
                 <p>
                   This is what most marketing consultants already do, just with
                   a narrower lens. The pillar covers website UX and conversion
@@ -453,9 +550,9 @@ export default function ArticlePage() {
                   buying decision, that kind of inconsistency erodes conversion
                   before the customer even reaches the consideration stage.
                 </p>
-              </PillarCard>
+              </ArticlePillarCard>
 
-              <PillarCard number="02" title="Live Experience Audit">
+              <ArticlePillarCard number="02" title="Live Experience Audit">
                 <p>
                   Most consultants do not run this pillar because most are not
                   equipped to. We engage the business as a real customer would,
@@ -490,9 +587,9 @@ export default function ArticlePage() {
                   delivering, and that gap is almost always larger than
                   expected, and it is where revenue leaks fastest.
                 </p>
-              </PillarCard>
+              </ArticlePillarCard>
 
-              <PillarCard number="03" title="Operational and Financial Audit">
+              <ArticlePillarCard number="03" title="Operational and Financial Audit">
                 <p>
                   The third pillar goes inside the business. We review past
                   revenue data, expense patterns, the structure of the team,
@@ -523,7 +620,7 @@ export default function ArticlePage() {
                   recommend can actually be delivered without breaking the
                   business that is trying to grow.
                 </p>
-              </PillarCard>
+              </ArticlePillarCard>
 
               <h3 className="font-display text-[22px] md:text-[24px] text-cream font-medium mt-12 mb-5 leading-snug">
                 The compounding effect
@@ -543,9 +640,9 @@ export default function ArticlePage() {
                 synthesis.
               </p>
 
-              <PullQuote>
+              <PullQuoteRules>
                 The connections between findings are the diagnosis.
-              </PullQuote>
+              </PullQuoteRules>
 
               <p className="mb-6">
                 The connections between findings are the diagnosis, and the
@@ -757,9 +854,9 @@ export default function ArticlePage() {
               <Divider />
 
               {/* CLOSING */}
-              <PullQuote>
+              <PullQuoteClosing>
                 The growth hacker framing is poison for premium brands.
-              </PullQuote>
+              </PullQuoteClosing>
 
               <p className="mb-6">
                 The growth hacker framing is poison for premium brands. The work
@@ -801,9 +898,65 @@ export default function ArticlePage() {
                 </a>
               </div>
 
-              <p className="font-body text-[14px] text-muted text-center mt-12 mb-2">
-                Sohom Mukherjee
-              </p>
+              {/* CONNECT — author signature with portrait + role + reach */}
+              <section className="mt-16 md:mt-20 pt-10 border-t border-[#1e1e1e]">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-7">
+                  <div className="relative w-[88px] h-[88px] rounded-full overflow-hidden border-2 border-gold/30 flex-shrink-0">
+                    <Image
+                      src="/portrait_about.jpg"
+                      alt="Sohom Mukherjee"
+                      fill
+                      className="object-cover object-top"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-display text-[22px] md:text-[24px] font-semibold text-cream leading-tight mb-1">
+                      Sohom Mukherjee
+                    </h3>
+                    <p className="font-body text-[11px] tracking-[0.18em] text-gold uppercase mb-3 font-medium">
+                      Revenue Leak Architect · Founder, Generation Beta
+                    </p>
+                    <p className="font-body text-[14px] text-muted leading-[1.7] mb-4 max-w-[480px]">
+                      Open to senior CMO and Head of Growth roles across Asia.
+                      Consulting via Generation Beta.
+                    </p>
+                    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-[13px]">
+                      <a
+                        href="https://linkedin.com/in/digitalsohom-mukherjee"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cream/85 hover:text-gold transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <Linkedin size={13} strokeWidth={1.6} />
+                        LinkedIn
+                      </a>
+                      <a
+                        href="mailto:sohom@betagrowthpartners.com"
+                        className="text-cream/85 hover:text-gold transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <Mail size={13} strokeWidth={1.6} />
+                        Email
+                      </a>
+                      <Link
+                        href="/"
+                        className="text-cream/85 hover:text-gold transition-colors inline-flex items-center gap-1.5"
+                      >
+                        iamsohom.com
+                        <ArrowUpRight size={13} strokeWidth={1.6} />
+                      </Link>
+                      <a
+                        href="https://www.betagrowthpartners.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cream/85 hover:text-gold transition-colors inline-flex items-center gap-1.5"
+                      >
+                        betagrowthpartners.com
+                        <ArrowUpRight size={13} strokeWidth={1.6} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </article>
         </main>
