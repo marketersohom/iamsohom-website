@@ -1,5 +1,7 @@
 import FadeUp from "@/components/FadeUp";
 import RLAPillarCard from "@/components/RLAPillarCard";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 const pillars = [
   {
@@ -88,6 +90,20 @@ export default function RLA() {
           </div>
         ))}
       </div>
+
+      <FadeUp delay={0.15}>
+        <Link
+          href="/the-revenue-leak-architecture"
+          className="group inline-flex items-center gap-1.5 mt-8 font-body text-[14px] font-medium text-gold/85 hover:text-gold transition-colors duration-200"
+        >
+          Read the full methodology
+          <ArrowUpRight
+            size={14}
+            strokeWidth={1.8}
+            className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"
+          />
+        </Link>
+      </FadeUp>
     </section>
   );
 }
