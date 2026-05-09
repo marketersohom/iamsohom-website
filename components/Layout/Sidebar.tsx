@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Linkedin, Mail } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const containerVariants = {
   hidden: {},
@@ -119,6 +120,7 @@ export default function Sidebar() {
         <a
           href="/sohom-mukherjee-cv.pdf"
           download
+          onClick={() => trackEvent("cv_download", { source: "sidebar" })}
           className="w-full py-2.5 text-[12px] font-body font-medium tracking-wide border border-gold/30 text-gold/80 rounded-md hover:border-gold/60 hover:text-gold transition-all duration-200 text-center"
         >
           Download CV

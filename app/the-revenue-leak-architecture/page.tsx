@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, Linkedin, Mail } from "lucide-react";
 import ReadingProgress from "@/components/article/ReadingProgress";
 import ArticlePillarCard from "@/components/article/ArticlePillarCard";
+import DiagnosticCTAButton from "@/components/article/DiagnosticCTAButton";
 
 const SITE_URL = "https://iamsohom.com";
 const ARTICLE_URL = `${SITE_URL}/the-revenue-leak-architecture`;
@@ -887,15 +888,7 @@ export default function ArticlePage() {
                   The 15-day Revenue Diagnostic is delivered through Generation
                   Beta, the agency I founded to operationalise this framework.
                 </p>
-                <a
-                  href="https://www.betagrowthpartners.com/diagnostic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-[#0a0a0a] font-medium font-body text-[13px] rounded-md hover:bg-gold/90 transition-all"
-                >
-                  Start the Diagnostic
-                  <ArrowUpRight size={14} strokeWidth={1.8} />
-                </a>
+                <DiagnosticCTAButton source="article" />
               </div>
 
               {/* CONNECT — author signature with portrait + role + reach */}

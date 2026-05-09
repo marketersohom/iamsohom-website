@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X, Linkedin, Mail, User, TrendingUp, Briefcase, Clock, FileText } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const navItems = [
   { id: "about", icon: User, label: "About" },
@@ -182,6 +183,7 @@ export default function MobileHeader() {
             <a
               href="/sohom-mukherjee-cv.pdf"
               download
+              onClick={() => trackEvent("cv_download", { source: "mobile_menu" })}
               className="w-full py-2.5 text-[12px] font-body font-medium tracking-wide border border-gold/30 text-gold/80 rounded-md hover:border-gold/60 hover:text-gold transition-all text-center"
             >
               Download CV
