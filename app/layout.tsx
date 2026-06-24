@@ -6,8 +6,6 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const GA_MEASUREMENT_ID = "G-1181X1S0W3";
-
 const CustomCursor = dynamic(() => import("@/components/CustomCursor"), { ssr: false });
 
 const cormorant = Cormorant_Garamond({
@@ -218,19 +216,6 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
 
-        {/* Google Analytics 4 — loads after the page is interactive */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
       </body>
     </html>
   );
