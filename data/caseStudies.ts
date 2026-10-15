@@ -127,12 +127,6 @@ export const caseStudies: CaseStudy[] = [
       "To search engines and first-time visitors abroad, the brand looked no different from a bot or a scam. Stacks were organised by product and price rather than by what the buyer wanted to achieve, and no amount of paid ads could close that trust gap.",
     result:
       "We built the brand and a seller persona, rebuilt the website and offer around buyer goals, and added AI chat with human oversight, trained service staff, and community and partnership channels. After 12 months, a 4-month handover trained the client's own in-house team to run it.",
-    testimonial: {
-      quote:
-        "It was a unique journey. Not everyone understands the complexity of building a peptide brand, but Generation Beta did, and we are ever so thankful to them.",
-      author: "Founder",
-      role: "Research peptide brand, UK",
-    },
     tags: ["Brand Authority", "Offer Architecture", "Customer Journey", "Partnerships"],
     href: "https://www.betagrowthpartners.com/work",
   },
