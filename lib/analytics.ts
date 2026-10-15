@@ -1,15 +1,16 @@
-// Lightweight GA4 event helper.
-// gtag.js is loaded in app/layout.tsx via next/script with strategy "afterInteractive",
-// so by the time a user can click anything, window.gtag is available.
+// Lightweight event helper.
+// Google Tag Manager is loaded in app/layout.tsx and exposes window.dataLayer,
+// not window.gtag. Events pushed here are picked up by GTM triggers
+// (Custom Event trigger, event name = the name passed to trackEvent).
 
-type GtagFn = (...args: unknown[]) => void;
+type DataLayerWindow = Window & { dataLayer?: Record<string, unknown>[] };
 
 export function trackEvent(
   name: string,
   params: Record<string, unknown> = {}
 ): void {
   if (typeof window === "undefined") return;
-  const gtag = (window as unknown as { gtag?: GtagFn }).gtag;
-  if (typeof gtag !== "function") return;
-  gtag("event", name, params);
+  const w = window as DataLayerWindow;
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event: name, ...params });
 }

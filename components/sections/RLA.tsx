@@ -52,21 +52,21 @@ export default function RLA() {
   return (
     <section id="rla" className="py-16 border-t border-[#1e1e1e]">
       <FadeUp>
-        <span className="inline-block font-body text-[11px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
+        <span className="inline-block font-body text-[12px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
           The Revenue Leak Architecture
         </span>
       </FadeUp>
 
       <FadeUp delay={0.05}>
-        <h2 className="font-display text-[36px] md:text-[44px] font-light text-cream leading-[1.15] mb-6 max-w-xl">
+        <h2 className="font-display text-[36px] md:text-[44px] font-medium text-cream leading-[1.15] mb-6 max-w-xl">
           Creator of the Revenue Leak Architecture.
         </h2>
       </FadeUp>
 
       <FadeUp delay={0.1}>
-        <p className="font-body text-[16px] text-muted leading-[1.8] max-w-[620px] mb-12">
+        <p className="font-body text-[17px] text-muted leading-[1.8] max-w-[620px] mb-12">
           The RLA helps a business owner stand back far enough to see the whole operation
-          simultaneously. Most consultants fix one part — marketing, operations, or pricing. The RLA
+          simultaneously. Most consultants fix one part: marketing, operations, or pricing. The RLA
           audits all three layers at the same time: digital presence, live customer experience, and
           operational and financial structure. Revenue leaks are almost never where the owner thinks
           they are.

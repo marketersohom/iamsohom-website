@@ -67,7 +67,7 @@ export default function ArticlePillarCard({ number, title, children }: Props) {
       />
 
       <div
-        className="relative z-[1] font-display italic font-light text-[44px] md:text-[52px] text-gold/35 leading-none mb-3"
+        className="relative z-[1] font-display italic font-normal text-[44px] md:text-[52px] text-gold/35 leading-none mb-3"
       >
         {number}
       </div>

@@ -23,10 +23,9 @@ const jost = Jost({
 });
 
 const SITE_URL = "https://iamsohom.com";
-const TITLE =
-  "Sohom Mukherjee | Revenue Leak Architect, Head of Growth & CMO across Asia";
+const TITLE = "Sohom Mukherjee | Revenue Leak Architect";
 const DESCRIPTION =
-  "Creator of the Revenue Leak Architecture. Senior CMO and Head of Growth across Asia. Consulting via Generation Beta for hospitality, wellness, and F&B brands.";
+  "Creator of the Revenue Leak Architecture. Consulting through Generation Beta for premium hospitality, wellness, and executive coaching brands.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,22 +37,16 @@ export const metadata: Metadata = {
   keywords: [
     "Sohom Mukherjee",
     "Revenue Leak Architect",
-    "Head of Growth",
-    "CMO",
-    "Chief Marketing Officer",
-    "Marketing Leader",
+    "Revenue Leak Architecture",
     "Growth Consultant",
     "Hospitality Growth",
     "Wellness Growth",
-    "F&B Marketing",
+    "Executive Coaching Marketing",
     "Asia",
-    "APAC",
     "Southeast Asia",
     "India",
-    "Indian hospitality",
-    "Singapore",
+    "Kolkata",
     "Bangkok",
-    "Phuket",
     "Generation Beta",
     "Beta Growth Partners",
   ],
@@ -102,7 +95,7 @@ const faqSchema = {
       name: "Who is Sohom Mukherjee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sohom Mukherjee is the founder of Generation Beta and creator of the Revenue Leak Architecture. He is a senior growth strategist focused on premium hospitality, wellness, and F&B brands across Asia, and is open to senior CMO and Head of Growth roles.",
+        text: "Sohom Mukherjee is the founder of Generation Beta and creator of the Revenue Leak Architecture. He is a principal growth consultant focused on premium hospitality, wellness, and executive coaching brands across Asia. All engagements run through Generation Beta.",
       },
     },
     {
@@ -118,7 +111,7 @@ const faqSchema = {
       name: "What is Generation Beta?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generation Beta, also known as Beta Growth Partners, is the consulting agency Sohom Mukherjee founded to deliver the Revenue Leak Architecture for premium hospitality, wellness, and F&B brands across Asia. Engagements range from 15-day diagnostic audits to multi-year embedded growth retainerships.",
+        text: "Generation Beta, also known as Beta Growth Partners, is the consulting agency Sohom Mukherjee founded to deliver the Revenue Leak Architecture for premium hospitality, wellness, and executive coaching brands across Asia. Engagements range from 15-day diagnostic audits to multi-year embedded growth retainerships.",
       },
     },
     {
@@ -126,7 +119,7 @@ const faqSchema = {
       name: "Where is Sohom Mukherjee based?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sohom Mukherjee is based in Bangkok, Thailand. He works with clients across Southeast Asia and India, with deep operating experience in both regions.",
+        text: "Sohom Mukherjee is based in Kolkata, India, with a presence in Bangkok, Thailand. He works with clients across Southeast Asia and India.",
       },
     },
     {
@@ -134,7 +127,7 @@ const faqSchema = {
       name: "What sectors does Sohom Mukherjee specialize in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Premium hospitality, wellness, and food and beverage (F&B) brands across Asia. Documented client outcomes include Amla Spa Group (+46% revenue Year 1, +84% Year 2 across three locations) and Tony Meechai Executive Coaching (+36% coaching enquiries, 270+ pre-launch book waitlist).",
+        text: "Premium hospitality, wellness, and executive coaching brands across Asia. Documented outcomes include a premium spa and hydrotherapy group in Phuket (+46% revenue Year 1, +84% Year 2 across three locations) and an executive coaching practice in Thailand (+36% coaching enquiries, 270+ pre-launch book waitlist).",
       },
     },
   ],
@@ -146,20 +139,20 @@ const personSchema = {
   name: "Sohom Mukherjee",
   url: SITE_URL,
   image: `${SITE_URL}/portrait_about.jpg`,
-  jobTitle: "Revenue Leak Architect, Head of Growth, CMO",
+  jobTitle: "Principal Growth Consultant, Revenue Leak Architect",
   description: DESCRIPTION,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Bangkok",
-    addressRegion: "Asia",
-    addressCountry: "TH",
+    addressLocality: "Kolkata",
+    addressRegion: "West Bengal",
+    addressCountry: "IN",
   },
   knowsLanguage: ["en", "bn", "hi"],
   knowsAbout: [
     "Growth Strategy",
     "Hospitality Marketing",
     "Wellness Marketing",
-    "F&B Marketing",
+    "Executive Coaching Marketing",
     "Revenue Leak Architecture",
     "Behavioural Psychology",
     "Asia Pacific Markets",

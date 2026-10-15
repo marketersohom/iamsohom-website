@@ -10,7 +10,7 @@ const SITE_URL = "https://iamsohom.com";
 const ARTICLE_URL = `${SITE_URL}/the-revenue-leak-architecture`;
 const TITLE = "The Revenue Leak Architecture";
 const DESCRIPTION =
-  "A methodology for finding the revenue your business is losing without knowing it. Built for premium hospitality, wellness, and F&B brands across Asia.";
+  "A methodology for finding the revenue your business is losing without knowing it. Built for premium hospitality, wellness, and executive coaching brands across Asia.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -47,7 +47,7 @@ const articleSchema = {
     url: "https://www.betagrowthpartners.com",
   },
   datePublished: "2026-05-08",
-  dateModified: "2026-05-08",
+  dateModified: "2026-10-15",
   mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
 };
 
@@ -78,7 +78,7 @@ function SectionHeader({
       <div className="font-display italic text-[14px] tracking-[0.32em] text-gold/70 mb-3">
         {numeral}
       </div>
-      <h2 className="font-display text-[30px] md:text-[40px] font-light text-cream leading-[1.15] tracking-tight">
+      <h2 className="font-display text-[30px] md:text-[40px] font-medium text-cream leading-[1.15] tracking-tight">
         {children}
       </h2>
     </header>
@@ -108,7 +108,7 @@ function BrandBlock({
 function PullQuoteCentered({ children }: { children: React.ReactNode }) {
   return (
     <blockquote className="my-12 md:my-14 text-center px-4">
-      <p className="font-display italic text-[22px] md:text-[28px] text-cream/95 leading-[1.35] font-light max-w-[560px] mx-auto">
+      <p className="font-display italic text-[22px] md:text-[28px] text-cream/95 leading-[1.35] font-normal max-w-[560px] mx-auto">
         {children}
       </p>
     </blockquote>
@@ -119,7 +119,7 @@ function PullQuoteCentered({ children }: { children: React.ReactNode }) {
 function PullQuoteLeft({ children }: { children: React.ReactNode }) {
   return (
     <blockquote className="my-12 md:my-14 border-l-2 border-gold/55 pl-6 md:pl-8">
-      <p className="font-display italic text-[22px] md:text-[28px] text-cream leading-[1.3] font-light">
+      <p className="font-display italic text-[22px] md:text-[28px] text-cream leading-[1.3] font-normal">
         {children}
       </p>
     </blockquote>
@@ -130,7 +130,7 @@ function PullQuoteLeft({ children }: { children: React.ReactNode }) {
 function PullQuoteRules({ children }: { children: React.ReactNode }) {
   return (
     <blockquote className="my-12 md:my-14 py-7 md:py-8 border-y border-gold/30">
-      <p className="font-display italic text-[20px] md:text-[24px] text-cream/90 leading-[1.4] font-light">
+      <p className="font-display italic text-[20px] md:text-[24px] text-cream/90 leading-[1.4] font-normal">
         {children}
       </p>
     </blockquote>
@@ -146,7 +146,7 @@ function PullQuoteClosing({ children }: { children: React.ReactNode }) {
         <div className="w-1 h-1 rounded-full bg-gold" />
         <div className="h-px w-16 bg-gold/35" />
       </div>
-      <p className="font-display italic text-[28px] md:text-[40px] text-cream leading-[1.2] font-light max-w-[640px] mx-auto">
+      <p className="font-display italic text-[28px] md:text-[40px] text-cream leading-[1.2] font-normal max-w-[640px] mx-auto">
         {children}
       </p>
       <div className="flex items-center justify-center gap-2 mt-7" aria-hidden="true">
@@ -249,7 +249,7 @@ function NumberedQuestion({
 }) {
   return (
     <div className="flex gap-5 md:gap-6 mb-7">
-      <div className="font-display italic font-light text-[28px] md:text-[34px] text-gold/55 leading-none flex-shrink-0 w-12 pt-1">
+      <div className="font-display italic font-normal text-[28px] md:text-[34px] text-gold/55 leading-none flex-shrink-0 w-12 pt-1">
         {number}
       </div>
       <p className="font-body text-[16px] md:text-[17px] text-cream/85 leading-[1.7] pt-1.5">
@@ -289,13 +289,13 @@ export default function ArticlePage() {
               <div className="mb-6">
                 <HeroOrnament />
               </div>
-              <div className="font-body text-[11px] tracking-[0.28em] text-gold uppercase mb-5 font-medium">
+              <div className="font-body text-[12px] tracking-[0.28em] text-gold uppercase mb-5 font-medium">
                 Methodology · Essay
               </div>
-              <h1 className="font-display text-[40px] md:text-[60px] font-light text-cream leading-[1.05] tracking-tight mb-5">
+              <h1 className="font-display text-[40px] md:text-[60px] font-medium text-cream leading-[1.05] tracking-tight mb-5">
                 The Revenue Leak Architecture
               </h1>
-              <p className="font-display italic text-[19px] md:text-[24px] text-cream/80 leading-[1.4] mb-7 font-light">
+              <p className="font-display italic text-[19px] md:text-[24px] text-cream/80 leading-[1.4] mb-7 font-normal">
                 A methodology for finding the revenue your business is losing
                 without knowing it.
               </p>
@@ -304,7 +304,7 @@ export default function ArticlePage() {
                 <span className="w-1 h-1 rounded-full bg-muted/50" />
                 <span>12 min read</span>
                 <span className="w-1 h-1 rounded-full bg-muted/50" />
-                <span>Updated May 2026</span>
+                <span>Updated October 2026</span>
               </div>
               <div className="h-px bg-gold/35 mt-8" />
             </header>
@@ -313,10 +313,10 @@ export default function ArticlePage() {
             <div className="font-body text-[16px] md:text-[17px] text-cream/85 leading-[1.85]">
               {/* Opening with drop cap */}
               <p className="mb-6">
-                <span className="font-display font-light italic text-gold text-[68px] md:text-[80px] leading-[0.85] float-left mr-3 mt-1">
+                <span className="font-display font-normal italic text-gold text-[68px] md:text-[80px] leading-[0.85] float-left mr-3 mt-1">
                   M
                 </span>
-                ost premium hospitality, wellness, and F&amp;B brands I work
+                ost premium hospitality, wellness, and executive coaching brands I work
                 with have decent marketing and a revenue problem that nobody
                 inside the business can quite locate. The leak is almost always
                 somewhere else, and marketing keeps getting blamed for it
@@ -666,13 +666,13 @@ export default function ArticlePage() {
 
               <Divider />
 
-              {/* SECTION V — Amla case (with subtle gold-bordered container) */}
-              <SectionHeader numeral="V">The Amla Spa case</SectionHeader>
+              {/* SECTION V, premium spa case (with subtle gold-bordered container) */}
+              <SectionHeader numeral="V">The premium spa case</SectionHeader>
 
               <div className="border-l-2 border-gold/35 pl-5 md:pl-7 -ml-5 md:-ml-7 my-2 space-y-6">
                 <p>
-                  Amla Spa Group is a wellness business with three locations in
-                  Thailand, and when the partners came to me, they thought their
+                  The client is a premium spa and hydrotherapy group with three locations in
+                  Phuket, Thailand, and when the partners came to me, they thought their
                   problem was low-season demand. They had a website, ads were
                   running, promotions were constant, and yet low-season revenue
                   was a fraction of high-season revenue and nobody inside the
@@ -868,7 +868,7 @@ export default function ArticlePage() {
 
               <p className="mb-6">
                 The Revenue Leak Architecture exists because premium hospitality,
-                wellness, and F&amp;B brands deserve a methodology that audits
+                wellness, and executive coaching brands deserve a methodology that audits
                 the whole revenue system at once, including the parts the owner
                 has been avoiding. That is the methodology.
               </p>
@@ -884,7 +884,7 @@ export default function ArticlePage() {
                 <p className="font-body text-[12px] tracking-[0.2em] text-gold uppercase mb-4 font-medium">
                   Begin a Diagnostic
                 </p>
-                <p className="font-display italic text-[20px] md:text-[24px] text-cream/90 leading-[1.4] mb-6 font-light">
+                <p className="font-display italic text-[20px] md:text-[24px] text-cream/90 leading-[1.4] mb-6 font-normal">
                   The 15-day Revenue Diagnostic is delivered through Generation
                   Beta, the agency I founded to operationalise this framework.
                 </p>
@@ -906,11 +906,10 @@ export default function ArticlePage() {
                     <h3 className="font-display text-[22px] md:text-[24px] font-semibold text-cream leading-tight mb-1">
                       Sohom Mukherjee
                     </h3>
-                    <p className="font-body text-[11px] tracking-[0.18em] text-gold uppercase mb-3 font-medium">
+                    <p className="font-body text-[12px] tracking-[0.18em] text-gold uppercase mb-3 font-medium">
                       Revenue Leak Architect · Founder, Generation Beta
                     </p>
                     <p className="font-body text-[14px] text-muted leading-[1.7] mb-4 max-w-[480px]">
-                      Open to senior CMO and Head of Growth roles across Asia.
                       Consulting via Generation Beta.
                     </p>
                     <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-[13px]">

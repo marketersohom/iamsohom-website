@@ -4,7 +4,7 @@
 
 ---
 
-Most premium hospitality, wellness, and F&B brands I work with have decent marketing and a revenue problem that nobody inside the business can quite locate. The leak is almost always somewhere else, and marketing keeps getting blamed for it because marketing is the easiest thing to look at first.
+Most premium hospitality, wellness, and executive coaching brands I work with have decent marketing and a revenue problem that nobody inside the business can quite locate. The leak is almost always somewhere else, and marketing keeps getting blamed for it because marketing is the easiest thing to look at first.
 
 From outside, the brand looks fine. The website is professional, the ads are running, the reviews are decent, the team is putting in hours. Revenue still plateaus, or grows slower than it should, or contracts in ways the people inside the business cannot fully explain, and the consultants who get hired to figure it out usually go straight back into marketing because marketing is what they know.
 
@@ -84,9 +84,9 @@ The audit is the foundation. Engagements then move into system architecture, whi
 
 ---
 
-## The Amla Spa case
+## The premium spa case
 
-Amla Spa Group is a wellness business with three locations in Thailand, and when the partners came to me, they thought their problem was low-season demand. They had a website, ads were running, promotions were constant, and yet low-season revenue was a fraction of high-season revenue and nobody inside the business could explain the gap.
+The client is a premium spa and hydrotherapy group with three locations in Phuket, Thailand, and when the partners came to me, they thought their problem was low-season demand. They had a website, ads were running, promotions were constant, and yet low-season revenue was a fraction of high-season revenue and nobody inside the business could explain the gap.
 
 The first fix was the obvious one. Their ads were boosted social posts rather than structured campaigns, so I rebuilt them as real campaigns and spend dropped while conversion rose. The engagement could have ended there, but the boosting fix turned out to be the smallest thing wrong with the business.
 
@@ -142,7 +142,7 @@ Most premium operators I have spoken to fail four or five of these questions. Th
 
 The growth hacker framing is poison for premium brands. The work is structural: diagnose the leaks, then patiently rebuild the systems. Anyone selling you a hack does not know what they are talking about, and they will waste your time and your money.
 
-The Revenue Leak Architecture exists because premium hospitality, wellness, and F&B brands deserve a methodology that audits the whole revenue system at once, including the parts the owner has been avoiding. That is the methodology.
+The Revenue Leak Architecture exists because premium hospitality, wellness, and executive coaching brands deserve a methodology that audits the whole revenue system at once, including the parts the owner has been avoiding. That is the methodology.
 
 Most operators who reach this point in the article already know which one or two of the seven questions hit hardest. That is usually where the diagnosis should start.
 

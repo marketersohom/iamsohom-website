@@ -79,7 +79,7 @@ export default function MobileHeader() {
         aria-hidden={!open}
       >
         <div className="flex items-center justify-between px-6 h-14 border-b border-[#1e1e1e]">
-          <p className="font-body text-[11px] tracking-[0.2em] text-gold uppercase">Menu</p>
+          <p className="font-body text-[12px] tracking-[0.2em] text-gold uppercase">Menu</p>
           <button
             onClick={() => setOpen(false)}
             aria-label="Close menu"
@@ -103,19 +103,19 @@ export default function MobileHeader() {
             <h2 className="font-display text-[20px] font-semibold text-cream leading-tight mb-1">
               Sohom Mukherjee
             </h2>
-            <p className="font-body text-[11px] font-medium tracking-[0.18em] text-gold uppercase mb-1.5">
+            <p className="font-body text-[12px] font-medium tracking-[0.18em] text-gold uppercase mb-1.5">
               Revenue Leak Architect
             </p>
             <p
-              className="font-body text-[11px] font-medium tracking-[0.16em] uppercase mb-4"
+              className="font-body text-[12px] font-medium tracking-[0.16em] uppercase mb-4"
               style={{ color: "rgba(201,168,76,0.7)" }}
             >
               Creator, Revenue Leak Architecture
             </p>
             <div className="flex items-start gap-2.5 bg-gold/5 border border-gold/20 rounded-lg px-3 py-2.5 mb-5">
               <span className="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-gold pulse-gold" />
-              <span className="font-body text-[11px] text-cream/80 leading-relaxed">
-                Open to senior roles across Asia &middot; Consulting via Generation Beta
+              <span className="font-body text-[12px] text-cream/80 leading-relaxed">
+                Consulting via Generation Beta
               </span>
             </div>
           </div>
@@ -136,6 +136,10 @@ export default function MobileHeader() {
 
           {/* Meta */}
           <div className="px-6 mb-6 space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="text-muted text-xs">&#9679;</span>
+              <span className="font-body text-[13px] text-muted">Kolkata, India</span>
+            </div>
             <div className="flex items-center gap-2">
               <span className="text-muted text-xs">&#9679;</span>
               <span className="font-body text-[13px] text-muted">Bangkok, Thailand</span>
@@ -181,16 +185,14 @@ export default function MobileHeader() {
               Get in Touch
             </button>
             <a
-              href="/sohom-mukherjee-cv.pdf"
-              download
-              onClick={() => trackEvent("cv_download", { source: "mobile_menu" })}
-              className="w-full py-2.5 text-[12px] font-body font-medium tracking-wide border border-gold/30 text-gold/80 rounded-md hover:border-gold/60 hover:text-gold transition-all text-center"
+              href="https://www.betagrowthpartners.com/method"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("method_cta_click", { source: "mobile_menu" })}
+              className="w-full py-2.5 text-[12px] font-body font-medium tracking-wide border border-gold/30 text-gold/80 rounded-md hover:border-gold/60 hover:text-gold transition-all duration-200 text-center"
             >
-              Download CV
+              See the Method
             </a>
-            <p className="text-[11px] font-body text-muted text-center -mt-1.5 tracking-wide">
-              Updated May 2026
-            </p>
           </div>
         </div>
       </aside>

@@ -11,16 +11,16 @@ interface HistoryItem {
 
 const history: HistoryItem[] = [
   {
-    period: "2022 – Present",
-    role: "Founder & Lead Strategist",
+    period: "2023 to Present",
+    role: "Principal Growth Consultant | Creator of The Revenue Leak Architecture™",
     org: "Generation Beta (betagrowthpartners.com)",
     orgHref: "https://www.betagrowthpartners.com",
-    location: "Bangkok & Phuket",
+    location: "India, Thailand",
     description:
-      "Founded the agency to deliver the Revenue Leak Architecture for premium hospitality, wellness, and F&B brands across Asia. Engagements range from 15-day behavioural diagnostics to multi-year embedded growth partnerships. Active.",
+      "Founded the agency to deliver the Revenue Leak Architecture for premium hospitality, wellness, and executive coaching brands across Asia. Engagements range from 15-day behavioural diagnostics to multi-year embedded growth partnerships. Active.",
   },
   {
-    period: "2018 – 2022",
+    period: "2018 to 2022",
     role: "Co-Founder and Director",
     org: "Digital Agency",
     location: "Kolkata",
@@ -28,7 +28,7 @@ const history: HistoryItem[] = [
       "Co-founded in 2018 as an MBA incubation project and scaled the agency to a 17-person team over four years. Served FMCG, energy, hospitality, architecture and construction, medical, and education sectors, primarily across Asia. Selected outcomes include a national solar energy client retained 3 years (performance marketing delivered +39% lead gen in 5 initial regions, scaled to 28 regions at +61% overall), 3 simultaneous activation campaigns across 3 states for a national FMCG brand, and +31% bookings in 4 months for a regional hotel. The foundation that later became Generation Beta.",
   },
   {
-    period: "2019 – 2020",
+    period: "2019 to 2020",
     role: "Area Sales Manager (MBA placement, concurrent with agency)",
     org: "National FMCG Brand",
     location: "Eastern India",
@@ -50,13 +50,13 @@ export default function WorkHistory() {
     <>
       <section id="history" className="py-16 border-t border-[#1e1e1e]">
         <FadeUp>
-          <span className="inline-block font-body text-[11px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
+          <span className="inline-block font-body text-[12px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
             Work History
           </span>
         </FadeUp>
 
         <FadeUp delay={0.05}>
-          <h2 className="font-display text-[36px] md:text-[44px] font-light text-cream leading-[1.15] mb-12 max-w-xl">
+          <h2 className="font-display text-[36px] md:text-[44px] font-medium text-cream leading-[1.15] mb-12 max-w-xl">
             Across India and Southeast Asia.
           </h2>
         </FadeUp>
@@ -75,9 +75,9 @@ export default function WorkHistory() {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-1.5">
-                    <span className="font-body text-[11px] text-muted">{item.period}</span>
+                    <span className="font-body text-[12px] text-muted">{item.period}</span>
                     <span className="text-[#2a2a2a]">·</span>
-                    <span className="font-body text-[11px] text-muted">{item.location}</span>
+                    <span className="font-body text-[12px] text-muted">{item.location}</span>
                   </div>
 
                   <h3 className="font-display text-[18px] font-medium text-cream mb-0.5">
@@ -95,7 +95,7 @@ export default function WorkHistory() {
                   ) : (
                     <p className="font-body text-[13px] text-gold/80 mb-2">{item.org}</p>
                   )}
-                  <p className="font-body text-[16px] text-muted leading-[1.8]">
+                  <p className="font-body text-[17px] text-muted leading-[1.8]">
                     {item.description}
                   </p>
                 </div>
@@ -108,7 +108,7 @@ export default function WorkHistory() {
       {/* Education */}
       <section id="education" className="py-16 border-t border-[#1e1e1e]">
         <FadeUp>
-          <span className="inline-block font-body text-[11px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
+          <span className="inline-block font-body text-[12px] font-medium tracking-[0.2em] text-gold uppercase mb-6">
             Education
           </span>
         </FadeUp>
@@ -127,7 +127,7 @@ export default function WorkHistory() {
                   <h3 className="font-display text-[18px] font-medium text-cream mb-1.5">
                     {item.degree}
                   </h3>
-                  <p className="font-body text-[16px] text-muted leading-[1.8]">
+                  <p className="font-body text-[17px] text-muted leading-[1.8]">
                     {item.detail}
                   </p>
                 </div>

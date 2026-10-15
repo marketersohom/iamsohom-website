@@ -61,7 +61,7 @@ export default async function OpengraphImage() {
               fontWeight: 400,
             }}
           >
-            Revenue Leak Architect &middot; Head of Growth &middot; CMO
+            Revenue Leak Architect &middot; Generation Beta
           </div>
         </div>
 
@@ -77,7 +77,7 @@ export default async function OpengraphImage() {
             letterSpacing: "0.08em",
           }}
         >
-          <span>Hospitality &middot; Wellness &middot; F&amp;B &middot; Across Asia</span>
+          <span>Hospitality &middot; Wellness &middot; Executive Coaching &middot; Across Asia</span>
           <span style={{ color: "#c9a84c" }}>iamsohom.com</span>
         </div>
       </div>

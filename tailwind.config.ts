@@ -12,7 +12,7 @@ const config: Config = {
         black: "#0a0a0a",
         gold: "#c9a84c",
         cream: "#ede8df",
-        muted: "#8e877a",
+        muted: "#b3ac9e",
         surface: "#111111",
         border: "#1e1e1e",
       },
