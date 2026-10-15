@@ -91,14 +91,21 @@ export const caseStudies: CaseStudy[] = [
     href: "https://www.betagrowthpartners.com/work",
   },
   {
-    id: "phuket-hospitality-diagnostic",
-    title: "Hospitality brand",
-    sector: "Hospitality",
-    location: "Phuket, Thailand",
+    id: "india-wellness-retreat-diagnostic",
+    title: "Boutique health and wellness retreat",
+    sector: "Wellness Retreat",
+    location: "North & South India",
     duration: "15-day diagnostic",
-    metrics: [{ value: "+18%", label: "Booking conversion" }],
+    metrics: [
+      { value: "+18%", label: "Booking conversion, no discounts" },
+      { value: "4 of 6", label: "Recommendations live in 90 days" },
+    ],
+    situation:
+      "Lifestyle and luxury retreats in North and South India, with a product and on-site experience stronger than many competitors. The brand was not reaching its target guests, so revenue was unpredictable and often stalled for months.",
+    finding:
+      "The website read like a travel portal, not a premium destination, so heavy discounting was doing the work positioning should have done. Pre-booking calls were handled by temps reading a script so generic it could have sold soap, with no system for retention or lifetime value and no outbound partnership channel.",
     result:
-      "A 15-day behavioural audit delivered a complete revenue leak map across 6 operational areas. The client implemented 4 of 6 recommendations within 90 days.",
-    tags: ["15-Day Diagnostic", "Operational Audit", "Implementation Support"],
+      "The client implemented 4 of the 6 recommendations. Within the first 90 days, booking conversion among their target guests rose 18%, with no discounting.",
+    tags: ["15-Day Diagnostic", "Positioning", "Pricing", "Customer Experience"],
   },
 ];
