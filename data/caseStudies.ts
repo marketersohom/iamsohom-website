@@ -107,5 +107,33 @@ export const caseStudies: CaseStudy[] = [
     result:
       "The client implemented 4 of the 6 recommendations. Within the first 90 days, booking conversion among their target guests rose 18%, with no discounting.",
     tags: ["15-Day Diagnostic", "Positioning", "Pricing", "Customer Experience"],
+    href: "https://www.betagrowthpartners.com/work",
+  },
+  {
+    id: "uk-research-peptide-brand",
+    title: "Research peptide brand",
+    sector: "Wellness",
+    location: "UK to Europe, US & SEA",
+    duration: "12-month partnership",
+    metrics: [
+      { value: "+86%", label: "Enquiries" },
+      { value: "+39%", label: "Enquiry-to-purchase rate" },
+      { value: "+90%", label: "Average order value" },
+      { value: "+58.78%", label: "Customer lifetime value" },
+    ],
+    situation:
+      "A UK distributor in a regulated category, with full legal paperwork, deep inventory, and word-of-mouth buyers across Europe, the US, and Southeast Asia. A previous agency's Meta and Google ad accounts were banned three times in the first month, and the inventory sat unsold.",
+    finding:
+      "To search engines and first-time visitors abroad, the brand looked no different from a bot or a scam. Stacks were organised by product and price rather than by what the buyer wanted to achieve, and no amount of paid ads could close that trust gap.",
+    result:
+      "We built the brand and a seller persona, rebuilt the website and offer around buyer goals, and added AI chat with human oversight, trained service staff, and community and partnership channels. After 12 months, a 4-month handover trained the client's own in-house team to run it.",
+    testimonial: {
+      quote:
+        "It was a unique journey. Not everyone understands the complexity of building a peptide brand, but Generation Beta did, and we are ever so thankful to them.",
+      author: "Founder",
+      role: "Research peptide brand, UK",
+    },
+    tags: ["Brand Authority", "Offer Architecture", "Customer Journey", "Partnerships"],
+    href: "https://www.betagrowthpartners.com/work",
   },
 ];
